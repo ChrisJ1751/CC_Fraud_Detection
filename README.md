@@ -12,7 +12,8 @@ This project implements a complete machine learning pipeline for detecting credi
 │   ├── 03_model_training.py     # Model training (with train/test split)
 │   ├── 04_evaluation.py         # Model evaluation on test set
 │   ├── 05_visualization.py      # Results visualization (ROC, confusion matrix)
-│   ├── app.py                   # Streamlit dashboard
+│   ├── app.py                   # Streamlit dashboard (full data, not for deployment)
+│   ├── app_sample.py            # Streamlit dashboard (sample data, for demo/deployment)
 │   ├── data/                    # Data folders (raw, processed)
 │   ├── models/                  # Saved models
 ├── requirements.txt
@@ -64,14 +65,20 @@ This project implements a complete machine learning pipeline for detecting credi
 - Plots ROC curves and confusion matrices for supervised models.
 - Visualizes model performance for easy comparison.
 
-### 7. Interactive Dashboard (`app.py`)
+### 7. Interactive Dashboard (`app.py` and `app_sample.py`)
 - Built with Streamlit.
+- `app.py`: For local use with full data (not suitable for deployment due to file size limits).
+- `app_sample.py`: For demo/deployment, uses included small sample data.
 - Allows users to:
   - Select and compare all models
   - View metrics, ROC, confusion matrix, and misclassified samples
   - Upload new data for prediction
   - Adjust decision threshold for probability-based models
   - See feature importances (Random Forest, MLP)
+
+## Demo Deployment
+- The repository includes a small, balanced sample dataset (`src/data/sample/`) and `app_sample.py` for easy deployment on Streamlit Cloud or similar platforms.
+- For full analysis, run locally with the full dataset (see instructions above).
 
 ## Model Explanations
 
