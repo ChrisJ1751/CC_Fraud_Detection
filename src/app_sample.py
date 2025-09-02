@@ -19,12 +19,12 @@ def load_data():
 def load_models():
     models_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), 'models'))
     models = {
-        'Isolation Forest': joblib.load(os.path.join(models_dir, 'isolation_forest.joblib')),
-        'One-Class SVM': joblib.load(os.path.join(models_dir, 'one_class_svm.joblib')),
-        'Local Outlier Factor': joblib.load(os.path.join(models_dir, 'local_outlier_factor.joblib')),
-        'Elliptic Envelope': joblib.load(os.path.join(models_dir, 'elliptic_envelope.joblib')),
-        'Random Forest': joblib.load(os.path.join(models_dir, 'random_forest.joblib')),
-        'MLP Classifier': joblib.load(os.path.join(models_dir, 'mlp_classifier.joblib')),
+        'Isolation Forest': joblib.load(os.path.join(models_dir, 'isolation_forest_sample.joblib')),
+        'One-Class SVM': joblib.load(os.path.join(models_dir, 'one_class_svm_sample.joblib')),
+        'Local Outlier Factor': joblib.load(os.path.join(models_dir, 'local_outlier_factor_sample.joblib')),
+        'Elliptic Envelope': joblib.load(os.path.join(models_dir, 'elliptic_envelope_sample.joblib')),
+        'Random Forest': joblib.load(os.path.join(models_dir, 'random_forest_sample.joblib')),
+        'MLP Classifier': joblib.load(os.path.join(models_dir, 'mlp_classifier_sample.joblib')),
     }
     return models
 

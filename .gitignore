@@ -3,6 +3,7 @@
 src/data/raw/
 src/data/processed/
 src/models/*.joblib
+!src/models/*_sample.joblib
 *.csv
 *.npy
 !src/data/sample/*.npy
