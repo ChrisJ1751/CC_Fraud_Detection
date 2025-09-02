@@ -1,0 +1,14 @@
+# Ignore data files and large model files
+# Ignore large data and model files, but allow sample data
+src/data/raw/
+src/data/processed/
+src/models/*.joblib
+*.csv
+*.npy
+!src/data/sample/*.npy
+# VSCode and Python
+.vscode/
+__pycache__/
+*.pyc
+.env
+.venv
