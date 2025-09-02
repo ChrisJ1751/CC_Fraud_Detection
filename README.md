@@ -76,6 +76,12 @@ This project implements a complete machine learning pipeline for detecting credi
   - Adjust decision threshold for probability-based models
   - See feature importances (Random Forest, MLP)
 
+## Deployment & Sample Models
+- The repo includes small sample models (`src/models/*_sample.joblib`) trained on the sample data for demo/deployment (e.g., Streamlit Cloud).
+- `app_sample.py` loads these sample models and the sample data for a fast, working demo.
+- To regenerate sample models, run `src/data/train_sample_models.py` (requires sample data in `src/data/sample/`).
+- The main models (`*.joblib`) are not included in the repo due to size limits.
+
 ## Demo Deployment
 - The repository includes a small, balanced sample dataset (`src/data/sample/`) and `app_sample.py` for easy deployment on Streamlit Cloud or similar platforms.
 - For full analysis, run locally with the full dataset (see instructions above).
